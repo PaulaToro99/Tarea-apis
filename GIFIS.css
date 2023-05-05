@@ -1,0 +1,91 @@
+html { overflow-y: scroll;}
+body { position: absolute;  width: 100%;}
+
+#search-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: black;
+    position: relative;
+}
+
+#results {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+    background: black;
+}
+
+#results > img {
+    max-width: 20%;
+    max-height: auto;
+    box-sizing: border-box;
+    float: left;
+    flex-direction: column; 
+    min-height: 100px;
+    padding: 15px;
+    object-fit: contain;
+}
+
+#giphy-form {
+    text-align: center;
+    padding: 3em;
+}
+
+#giphy-form img {
+    width: 25em;
+    margin: 2em;
+}
+
+.input-wrapper {
+    position: sticky;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    flex-wrap: wrap;
+    top: 0px;
+    left: 0px;
+    height: 52px;
+    min-height: 52px;
+    z-index: 0;
+    padding: 0px;
+    margin: auto;
+    width: 60%;
+    margin-top: 2em;
+}
+
+.input-wrapper input[type="text"] {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    font-weight: normal;
+    width: 100%;
+    z-index: 2;
+    float: left;
+    position: relative;
+    height: 52px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    border-radius: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    margin: 0px;
+    padding: 0px 17px;
+    outline: none;
+}
+
+.input-wrapper button {
+    position: absolute;
+    height: 100%;
+    width: 7em;
+    background: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 100%);
+    z-index: 99;
+    right: 0;
+    border: none;
+    color: white;
+}
